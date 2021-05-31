@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+    
+    <Import Project="../Database.props" />
+    <Import Project="../Awful.props" />
+    
+    <ItemGroup>
+      <PackageReference Include="DeepCloner" Version="0.10.2" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\Awful.Webview\Awful.Webview.csproj" />
+    </ItemGroup>
+    
+</Project>
