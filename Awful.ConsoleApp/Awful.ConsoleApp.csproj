@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <Import Project="../UI.props" />
+  <Import Project="../Database.props" />
+  <Import Project="../Awful.props" />
+  <ItemGroup>
+    <Compile Remove="HTML\**" />
+    <EmbeddedResource Remove="HTML\**" />
+    <None Remove="HTML\**" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <PackageReference Include="Sharprompt" Version="2.1.0-preview2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Awful.Webview\Awful.Webview.csproj" />
+  </ItemGroup>
+
+</Project>
